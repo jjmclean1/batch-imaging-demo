@@ -1,0 +1,21 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "Batch card scan demo: OpenCV splits a photo into cards, Gemini identifies them in one request"
+authors = [
+    { name = "jjmclean1", email = "jjmclean@unc.edu" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "google-genai",
+    "python-dotenv",
+    "python-multipart",
+    "pydantic",
+    "opencv-python-headless",
+    "numpy",
+]
+
+[tool.uv]
+package = false
